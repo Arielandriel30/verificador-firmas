@@ -1,0 +1,3 @@
+Flask==2.x.x
+pyhanko==0.x.x
+PyPDF2==1.x.x

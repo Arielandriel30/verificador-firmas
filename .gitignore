@@ -1,0 +1,12 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar los archivos de log
+*.log
+
+# Ignorar la carpeta de configuración de Visual Studio
+.vs/
+.vscode/
+
+# Ignorar archivos de entorno
+.env
