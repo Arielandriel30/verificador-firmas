@@ -51,7 +51,7 @@ Este proyecto permite verificar firmas digitales en archivos PDF utilizando un m
 
 2. **archivo PDF a verificar**:
 
-    Cambia el nombre del archivo PDF en el script `verificador.js` (línea 6):
+    Cambia el nombre del archivo PDF en el script `verificador.js` (línea 6)-El archivo se tiene que subir en la raiz del proyecto:
 
     ```javascript
     const pdfPath = './hola.pdf'; // Cambia esto por el nombre real de tu archivo
@@ -74,4 +74,14 @@ Este proyecto permite verificar firmas digitales en archivos PDF utilizando un m
 ## Notas
 
 - Asegurarse  que el servidor de Flask esté corriendo antes de ejecutar el script de Node.js.
-
+------
+Hay un ejemplo básico también para validar que el documento PDF tiene una firma, hay que subir un PDf a la raiz del proyecto
+Cambiar el nombre del archivo en `verificar_firma_basica.py` (línea 3):
+ ```javascript
+    ruta_pdf = 'hola1.pdf'
+  ```
+Despues correr  ```python verificar_firma_basica.py x consola.
+Si tiene firma:
+"Firma digital encontrada en el campo del formulario."
+Si no:
+"El PDF no tiene un formulario de firma (/AcroForm)."
