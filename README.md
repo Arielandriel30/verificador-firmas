@@ -74,6 +74,22 @@ Este proyecto permite verificar firmas digitales en archivos PDF utilizando un m
 ## Notas
 
 - Asegurarse  que el servidor de Flask esté corriendo antes de ejecutar el script de Node.js.
+Respuestas:
+Si la firma es válida:
+firma_valida: true
+
+Si la firma no es válida:
+firma_valida: false
+Y adicionalmente:
+INTACT: Si la firma es válida y el documento no ha sido modificado.
+
+UNTRUSTED: Si la firma no se puede verificar porque el certificado no es confiable.
+
+TIMESTAMP_TOKEN: Si la firma incluye un sello de tiempo.
+
+EXTENDED_WITH_FORM_FILLING: Si la firma permite modificaciones en formularios.
+
+ACCEPTABLE_MODIFICATIONS: Si el documento permite ciertos cambios después de la firma.
 ------
 Hay un ejemplo básico también para validar que el documento PDF tiene una firma, hay que subir un PDf a la raiz del proyecto
 Cambiar el nombre del archivo en `verificar_firma_basica.py` (línea 3):
