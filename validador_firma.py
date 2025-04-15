@@ -35,10 +35,10 @@ def validar_pdf():
                 'mensaje': 'El archivo PDF no contiene formularios ni firmas.'
             })
 
-        # Guardar las firmas antes de resetear
+        # Guarda las firmas antes de resetear
         signatures = list(reader.embedded_signatures)
 
-        # Reiniciar el stream para que validate_pdf_signature lo pueda leer
+        # Reinicia el stream para que validate_pdf_signature lo pueda leer
         pdf_stream.seek(0)
 
 
