@@ -1,4 +1,4 @@
-# verificador-firmas
+
 # Verificador de Firmas Digitales en PDF
 
 Este proyecto permite verificar firmas digitales en archivos PDF utilizando un microservicio con Flask (Python) y una aplicación cliente con Node.js. 
